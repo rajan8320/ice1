@@ -9,6 +9,8 @@ package card;
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author srinivsi
+ /* rajan jitendrasinh chauhan
+ student id =991704597
  */
 import java.util.Random;
 import java.util.Scanner;
@@ -32,6 +34,13 @@ public class CardTrick {
             
             magicHand[i] = c;
         }
+            Card luckyCard = new Card();
+        
+            luckyCard.setValue(7); // Choose any card number
+        
+            luckyCard.setSuit(Card.SUITS[2]); // Choose any suit number
+        
+        magicHand[magicHand.length - 1] = luckyCard;
         
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
